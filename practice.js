@@ -117,15 +117,11 @@ const state = {
 
 function stateLooper(obj) {
   // REPLACE THIS WITH YOUR CODE
-  console.log(obj);
   for (let key in obj) {
-    console.log(key);
-    console.log(obj[key])
     if (obj[key] > 3000000) {
       obj[key] = 0;
     }
   }
-  console.log(obj);
   return obj;
 }
 
