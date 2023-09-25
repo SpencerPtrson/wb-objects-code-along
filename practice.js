@@ -187,6 +187,7 @@ const animalCount = {
 // animalCount object.
 
 // REPLACE THIS WITH YOUR CODE
+const { cats, dogs, mice } = animalCount;
 
 /// ////////////// PROBLEM 14 ////////////////////
 
@@ -195,6 +196,11 @@ const animalCount = {
 // Then return the sum of the two numbers.
 
 // REPLACE THIS WITH YOUR CODE
+function addition(arr) {
+  const [num1, num2] = arr;
+  return num1 + num2;
+}
+
 
 /// ////////////// PROBLEM 15 ////////////////////
 
@@ -204,6 +210,10 @@ const animalCount = {
 // Using object destructuring, return the total sum of the counts of these animals
 
 // REPLACE THIS WITH YOUR CODE
+function zooAnimals(obj) {
+  const { lion, tiger, bear } = obj;
+  return lion + tiger + bear;
+}
 
 /// ////////////// PROBLEM 16 ////////////////////
 
@@ -233,3 +243,6 @@ const animalCount = {
 // destructured object variables.
 
 // REPLACE THIS WITH YOUR CODE
+function greeting(destObj) {
+  return ("Hello, " +  destObj.title + " " + destObj.name + "!");
+}
